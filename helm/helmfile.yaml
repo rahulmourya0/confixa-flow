@@ -1,0 +1,10 @@
+---
+releases:
+
+  - name: confixa-argocd
+    chart: ./confixa-argocd
+    installed: true
+
+  - name: confixa-redis
+    chart: ./confixa-redis
+    installed: true
