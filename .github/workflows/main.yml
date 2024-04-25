@@ -27,5 +27,6 @@ jobs:
        
    - name: Push Branch
      run: |
-        git push --set-upstream origin "$BRANCH_NAME"
+       BRANCH_NAME="issue-${{ github.event.issue.number }}"
+       git push --set-upstream origin "$BRANCH_NAME"
        
