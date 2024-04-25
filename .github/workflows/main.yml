@@ -27,5 +27,5 @@ jobs:
        
    - name: Push Branch
      run: |
-       git push origin "$BRANCH_NAME"   
+       git push  
        
