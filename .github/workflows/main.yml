@@ -16,6 +16,6 @@ jobs:
        
    - name: Create Branch
      run: |
-       BRANCH_NAME="issue-${{ github.event.issue.number }}-${{ github.event.issue.title }}"
+       BRANCH_NAME="issue-${{ github.event.issue.number }}"
        git checkout -b "$BRANCH_NAME"
        
