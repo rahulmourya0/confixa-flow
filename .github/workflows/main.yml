@@ -22,7 +22,7 @@ jobs:
    
        echo"git config --global user.name: ${{ github.event.user.name || 'GitHub Actions Bot' }}"
        echo"git config --global user.email: ${{ github.event.user.email || 'github-actions@users.noreply.github.com' }}"
-       echo"git remote set-url origin: ${ https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}}"
+       echo"git remote set-url origin: https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}"
 
    - name: Create Branch
      run: |
